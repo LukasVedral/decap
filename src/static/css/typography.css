@@ -3,7 +3,7 @@ a{
     color: var(--light);
 }
 
-a,p,li,span, .info__item h3, td{
+a,p,li,span, .info__item h3, td, pre{
     font-family: "Space Grotesk", sans-serif;
     margin: 0;
 }
