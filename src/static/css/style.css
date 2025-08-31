@@ -893,6 +893,9 @@
     aspect-ratio: 16/9;
     border: none;
   }
+  .main__container > .main__years{
+    gap: 8rem;
+  }
 
 
 
