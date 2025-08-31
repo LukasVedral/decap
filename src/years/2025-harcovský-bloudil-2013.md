@@ -1,5 +1,6 @@
 ---
 title: Harcovský bloudil 2013
+year: 2013
 vysledky:
   - label: MM - Muži
     url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_MM.pdf
