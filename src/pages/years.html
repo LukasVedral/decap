@@ -98,11 +98,11 @@ permalink: /pages/years/index.html
           </div>
         {% endif %}
 
-        {% if year.data.video %}
-          <div class="year-video">
-            <iframe src="{{ year.data.video | youtubeEmbed }}" frameborder="0" allowfullscreen></iframe>
-          </div>
-        {% endif %}
+        {% if year.data.video and year.data.video != "" %}
+        <div class="year-video">
+          <iframe src="{{ year.data.video | youtubeEmbed }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      {% endif %}
       </article>
     {% endfor %}
 

@@ -886,6 +886,7 @@
   }
   .year-video{
     grid-area: video;
+    height: auto;
   }
   .year-video > iframe{
     width: 100%;
