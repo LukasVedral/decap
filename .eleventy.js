@@ -4,8 +4,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "src/admin/config.yml": "admin/config.yml" });
 
 
-    eleventyConfig.addCollection("years", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/years/*.md").reverse();
+    eleventyConfig.addCollection("years", collectionApi => {
+      return collectionApi.getFilteredByGlob("src/years/*.md")
+                          .sort((a, b) => b.data.year - a.data.year);
+    });
 
   });
 
