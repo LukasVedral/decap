@@ -28,4 +28,4 @@ collections:
           - { label: "Od koho", name: "from", widget: "string" }
           - { label: "Náhledový obrázek", name: "image", widget: "image" }
           - { label: "Odkaz", name: "link", widget: "string" }
-      - { label: "Odkaz na video", name: "video", widget: "string" }
+      - { label: "Odkaz na video", name: "video", widget: "string", required: false }
