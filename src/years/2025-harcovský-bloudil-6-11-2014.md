@@ -10,5 +10,6 @@ vysledky:
 video: ""
 ---
 Ahoj závoďáci,
+
 čtvrtý ročník Harcovského bloudila je již minulostí. V sekci výsledky si můžete porovnat své výkony a ve fotogalerii si připomenout některé okamžiky. Výkony jsou obdivuhodné u všech dvojic. Počasí nám přálo a doufáme, že jen umocnilo váš prožitek.
 Jarda a holky Kuprovi
