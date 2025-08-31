@@ -15,6 +15,6 @@ gallery:
   - from: Tomaš Srb
     image: https://img44.rajce.idnes.cz/d4402/15/15649/15649924_ef22ac9e96f274d93d5b2672d575d6b8/images/DSC02657.jpg?ver=0
     link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2018
-video: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2018
+video: https://www.youtube.com/watch?v=B3A5QUcDwPQ&embeds_referring_euri=https%3A%2F%2Fwww.harcovskybloudil.cz%2F&source_ve_path=MjM4NTE
 ---
 Ahoj Bloudilové, děkujeme všem za letošní hojnou účast. Bylo skvělé vidět tolik nadšených závodníků na trati. Doufáme, že jste si své výkony užili a těšíme se na příští ročník.
