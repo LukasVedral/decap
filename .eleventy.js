@@ -9,7 +9,6 @@ module.exports = function(eleventyConfig) {
                           .sort((a, b) => b.data.year - a.data.year);
     });
 
-  });
 
   eleventyConfig.addFilter("url", (value) => {
     if (!/^https?:\/\//i.test(value)) {
