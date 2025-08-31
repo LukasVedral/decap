@@ -1,0 +1,65 @@
+---
+title: years
+permalink: /years/index.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template | News</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Decap cms: editable news</h1>
+  </header>
+
+  <main class="main__container">
+    {% for year in collections.years %}
+  <article class="year-item">
+    <h2>{{ year.data.title }} ({{ year.data.year }})</h2>
+
+    <div class="year-body">
+      {{ year.templateContent }}
+    </div>
+
+        {% if year.data.vysledky %}
+          <ul class="year-results">
+            {% for vysledek in year.data.vysledky %}
+              <li><a href="{{ vysledek.url }}">{{ vysledek.label }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if year.data.gallery %}
+          <div class="year-gallery">
+            {% for photo in year.data.gallery %}
+              <figure>
+                <img src="{{ photo.image }}" alt="Foto">
+                <figcaption>
+                  {{ photo.from }} – 
+                  <a href="{{ photo.link }}">Odkaz</a>
+                </figcaption>
+              </figure>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if year.data.video %}
+          <div class="year-video">
+            <iframe src="{{ year.data.video }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </main>
+
+
+
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+</body>
+</html>
