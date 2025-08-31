@@ -52,45 +52,29 @@
 
 </header>
   
-  <main class="main__container main--contact">
-    <h1>Kontakt</h1>
-    <div class="contact__container">
-      <a href="https://lezci.com" class="contact__item">
-        <h2>Název spolku</h2>
-        <p>Lezci.com, z.s.</p>
-      </a>
-      <a href="https://www.google.com/maps/place/Na+Čekané+266%2F9,+460+15+Liberec-Starý+Harcov/@50.7767897,15.0753393,15z/data=!3m1!4b1!4m6!3m5!1s0x4709340fdec8f861:0x95c083b7d546adbb!8m2!3d50.7767902!4d15.085639!16s%2Fg%2F11c4zzlh_q?entry=ttu&g_ep=EgoyMDI1MDgwNS4wIKXMDSoASAFQAw%3D%3D" class="contact__item">
-        <h2>Adresa</h2>
-        <p>Na Čekané 266/9, Liberec 15, 460 15</p>
-      </a>
-      <a href="https://ktv.fp.tul.cz/katedra/lide/40-kupr-jaroslav" class="contact__item">
-        <h2>Ředitel spolku</h2>
-        <p>PhDr. Jaroslav Kupr, Ph.D.</p>
-      </a>
-      <a href="https://rejstrik-firem.kurzy.cz/05627231/lezci-com-z-s" class="contact__item">
-        <h2>IČO</h2>
-        <p>05627231</p>
-      </a>
-      <a href="mailto:suprcupr@seznam.cz" class="contact__item">
-        <h2>Email</h2>
-        <p>suprcupr@seznam.cz</p>
-      </a>
-      <a href="tel:+420737383808" class="contact__item">
-        <h2>Telefon</h2>
-        <p>+420 737 383 808</p>
-      </a>
+  <main class="main__container main--applications">
+    <div class="applications__header">
+      <h1>Přihlášky 2025</h1>
+      <p class="applications__text">V den závodu je možné se přihlásit přímo na prezentaci do max. kapacity 80 závodních dvojic.</p>
+      <button id="sign-up-btn" class="btn btn--primary primary--ligh">Přihlásit se</button>
     </div>
+    <section class="applications__table">
 
-    <div class="us__container">
-      <a class="bottom" href="lezci.com">
-        <img class="img--responsive" src="\images\hb-sonzori\lezci.svg" alt="logo-lezci.com">
-        </a>
-      <a href="./index.html">
-      <img class="img--responsive" src="/logo-dark.svg" alt="logo-hracovský bloudil">
-      </a>
-
-    </div>
+      <table id="team-table" class="team-table">
+        <thead>
+          <tr>
+            <th>Název týmu</th>
+            <th>Kategorie</th>
+            <th>1. Závodník</th>
+            <th>2. Závodník</th>
+            <th>Akce</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
   </main>
+
   <footer class="page__footer">
     <div class="footer__sponsors">
       <div class="sponsors__logo">
@@ -224,9 +208,71 @@
 
 
 
+  <div id="signup-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Přihlášení</h2>
+  
+      <label><p>Název týmu: </p><input type="text" id="teamName"></label>
+      <label><p>1. závodník: </p><input type="text" id="racer1"></label>
+      <label><p>1. závodník - email: </p><input type="email" id="email1"></label>
+      <label><p>2. závodník: </p><input type="text" id="racer2"></label>
+      <label><p>2. závodník - email: </p><input type="email" id="email2"></label>
+      <label><p>Heslo: </p><input type="password" id="password"></label>
+      <!-- DROPDOWN NA KATEGORIE -->
+      <div class="category-dropdown">
+        <div class="selected-category" id="selectedCategory"></div>
+        <div class="category-list" id="categoryList">
+          <img src="/images/categories/men.svg" data-value="MM">
+          <img src="/images/categories/women.svg" data-value="ŽŽ">
+          <img src="/images/categories/mix.svg" data-value="MŽ">
+          <img src="/images/categories/children.svg" data-value="DD">
+          <img src="/images/categories/podivini.svg" data-value="PO">
+        </div>
+        <svg  class="dropdown-sign" width="20" height="35" viewBox="0 0 20 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.976133 3.24L3.80547 0.413334L19.2161 15.8187C19.4645 16.0655 19.6617 16.3591 19.7962 16.6824C19.9307 17.0057 20 17.3525 20 17.7027C20 18.0529 19.9307 18.3996 19.7962 18.7229C19.6617 19.0463 19.4645 19.3398 19.2161 19.5867L3.80547 35L0.9788 32.1733L15.4428 17.7067L0.976133 3.24Z" fill="#231F20"/>
+        </svg>
+        <!-- Skryté pole, které se odesílá -->
+        <input type="hidden" id="category" name="category">
+      </div>
+  
+
+  
+      <div class="modal-buttons">
+        <button id="submit-signup" class="signup-btn">Přihlásit se</button>
+        <button id="close-modal" class="close">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="5.65674" width="8" height="42" transform="rotate(-45 0 5.65674)" fill="#231F20"/>
+          <rect x="29.6985" width="8" height="42" transform="rotate(45 29.6985 0)" fill="#231F20"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Logout modal -->
+  <div id="logout-modal" class="modal hidden">
+    <div class="modal-content modal--logout">
+      <h2>Odhlášení týmu</h2>
+      <label>Heslo: <input type="password" id="logout-password"></label>
+      <div class="modal-buttons">
+        <button id="confirm-logout" class="signup-btn">Odhlásit se</button>
+        <button id="close-logout-modal" class="close">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="5.65674" width="8" height="42" transform="rotate(-45 0 5.65674)" fill="#231F20"/>
+            <rect x="29.6985" width="8" height="42" transform="rotate(45 29.6985 0)" fill="#231F20"/>
+            </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
 
 
   <script type="module" src="./src/scripts/hamburger.js"></script>
+  <script type="module" src="./src/scripts/applications.js"></script>
   
+
+
 </body>
 </html>
