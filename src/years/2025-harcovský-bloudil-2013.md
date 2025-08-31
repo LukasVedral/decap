@@ -9,14 +9,12 @@ vysledky:
     url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_MZ.pdf
 video: ""
 ---
-Orientační běh, procházka nebo rande dvojic v okolí Harcova, neboli Harcovský bloudil 2013 je již za dveřmi. Třetí ročník se konání: 5. 11. 2013. Těšíme se na všechny příznivce dobrodružství, dobré nálady a třeba i sportovních výkonů. V letošním roce vyhlašujeme čtyři kategorie. Již tradičně se jedná o kombinace: muž – muž, muž – žena, žena – žena. A letos i oficiální vložená kategorie PODIVÍNŮ (bez rozdílu pohlaví). Za podivíny považujeme závodníky v převlecích, s exotickými účesy apod., kteří takto absolvují celý závod. Posouzení, zda jste či nejste podivíni ponechte na organizátorech. V přihlašovacím systému se přihlašte dle pohlaví do kategorii MM, ŽŽ, MŽ. Při vyhlašování můžete být překvapeni za umístění i v kategorii podivínů. Těšit se můžete na zajímavé ceny od partnerů akce.
+Třetí ročník Harcovského bloudila máme zdárně za sebou. Měsíček na cestu nesvítil, ale míra pojizerského humusu byla stále ještě únosná. Všem vám děkujeme za účast a doufáme, že jste si závod ve zdraví užili. Celkově se na trať vydalo 73 dvojic, které startovali v kategoriích muž-muž, žena-žena a muž-žena. Vyhlásili jsme i tři dvojice podivínů, kteří startovali v různých převlecích. Vážíme si i ostatních podivínských týmů, kterým to také náramně slušelo. Na trať se vydalo i několik mladších týmů k lezeckého oddílu HO Větrník. Tuto mladou elitu máme otestovanou i z jiných akcí, proto jsme se (ne)báli vypustit je na trať Harcovského bloudila. 
 
-Registrace se rozběhne 10. 10. 2013. Kapacita je omezena na 80 přihlášených dvojic.
+Vaše výkony si můžete porovnat v záložce výsledky a atmosféru závodu si připomenout pomocí fotografií v galerii. Celkový počet bodů z kontrol byl 470. Podařilo se pokořit 350 bodů, což považujeme za fantastické.    
 
-„Brýle z lyží, batoh z duší“ ne nezbláznili jsme se. Jedná se o produkty firmy Respiro, která je dlouhodobým partnerem závodu. Jak na to, jak to vypadá a další informace o upcycledu v Čechách si můžete poslechnout po registraci. Během celé akce je možné zakoupit i produkty této české firmy. 
+V kategorii muž-muž, chceme upozornit na tým The Wolves. Tento tým nasbíral největší počet bodů v nejkratším čase celkově. Bohužel jednu (zrovna 50ti bodovou) kontrolu neoznačili důsledně a proto klukům nebyla uznána. To je posunulo na čtvrté místo v kategorii. Věříme, že The Wolves uvidíme za rok na bedně.
 
-K navození té správné atmosféry vám mohou pomoci fotky i báseň z minulých ročníků.
+Chceme poděkovat všem partnerům akce za podmínky, které nám stanovili a členům HO Větrník, kteří nám pomohli s organizací.
 
-Na příjemně strávené společné chvíle vás zvou a těší se
-
-Klára a Jarda Kuprovi
+Kuprovci
