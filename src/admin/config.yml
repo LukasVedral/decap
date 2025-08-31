@@ -13,20 +13,19 @@ collections:
     create: true
     slug: "{{year}}-{{title}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Year", name: "year", widget: "number" }
-      - { label: "Body", name: "body", widget: "text" }
+      - { label: "Nadpis", name: "title", widget: "string" }
+      - { label: "Text", name: "body", widget: "text" }
       - label: "Vysledky"
         name: "vysledky"
         widget: "list"
         fields:
-          - { label: "Label", name: "label", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
-      - label: "Gallery"
+          - { label: "Kategorie", name: "label", widget: "string" }
+          - { label: "Odkaz", name: "url", widget: "string" }
+      - label: "Galerie"
         name: "gallery"
         widget: "list"
         fields:
-          - { label: "From", name: "from", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Link", name: "link", widget: "string" }
-      - { label: "Video", name: "video", widget: "string" }
+          - { label: "Od koho", name: "from", widget: "string" }
+          - { label: "Náhledový obrázek", name: "image", widget: "image" }
+          - { label: "Odkaz", name: "link", widget: "string" }
+      - { label: "Odkaz na video", name: "video", widget: "string" }

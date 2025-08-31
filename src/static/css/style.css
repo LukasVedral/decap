@@ -840,6 +840,58 @@
     display: flex;
   }
 
+  /*rocniky*/
+
+  .year-item{
+    display: grid;
+    grid-template-areas: "title" "text" "results" "gallery" "video";
+    gap: 1rem;
+  }
+  .year-item > h2{
+    grid-area: title;
+  }
+  .year-body{
+    grid-area: text;
+  }
+
+  .year-results{
+    grid-area: results;
+  }
+  .year-results > ul{
+    display: flex;
+    gap: 1rem;
+  }
+  .year-gallery{
+    grid-area: gallery;
+    display: flex;
+    gap: .5rem;
+  }
+  .year-gallery figure{
+    flex: 1;
+    height: auto;
+    margin: 0;
+  }
+  .year-gallery figcaption{
+    text-align: center;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 600;
+  }
+  .year-item a, .year-item figcaption{
+    text-decoration: underline;
+    color: black;
+  }
+  .year-item a:hover, .year-item figure:hover > figcaption{
+    color: var(--primary);
+  }
+  .year-video{
+    grid-area: video;
+  }
+  .year-video > iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+  }
 
 
 
@@ -1056,5 +1108,19 @@
         grid-area: sign-up;
       }
 
+      .year-item{
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "title title""text gallery""results gallery" "video gallery";
+        /*max-width: 700px;*/
+        grid-gap: 2rem;
+      }
+
+      .year-gallery{
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .year-gallery figure{
+        flex: none;
+      }
     }
 }

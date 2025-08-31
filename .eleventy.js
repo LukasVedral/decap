@@ -6,8 +6,21 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection("years", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/years/*.md").reverse();
+
   });
 
+  eleventyConfig.addFilter("url", (value) => {
+    if (!/^https?:\/\//i.test(value)) {
+      return "https://" + value;
+    }
+    return value;
+  });
+  eleventyConfig.addFilter("youtubeEmbed", (url) => {
+    const match = url.match(/v=([a-zA-Z0-9_-]+)/);
+    if (match) return `https://www.youtube.com/embed/${match[1]}`;
+    return url;
+  });
+  
   return {
     dir: {
       input: "src",
