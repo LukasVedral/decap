@@ -1,5 +1,6 @@
 ---
 title: Harcovský bloudil 2015
+year: 2015
 video: https://youtube.com/watch?v=BrsnB6zXApE
 ---
 Zdravíme všechny aktéry Harcovského bloudila 2015. 
