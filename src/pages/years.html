@@ -68,7 +68,7 @@ permalink: /pages/years/index.html
     <h2>{{ year.data.title }}</h2>
 
     <div class="year-body">
-      {{ year.templateContent }}
+      {{ year.data.body | safe }}
     </div>
 
         {% if year.data.vysledky %}

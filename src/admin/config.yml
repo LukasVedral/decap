@@ -14,7 +14,7 @@ collections:
     slug: "{{year}}-{{title}}"
     fields:
       - { label: "Nadpis", name: "title", widget: "string" }
-      - { label: "Text", name: "body", widget: "text" }
+      - { label: "Text", name: "body", widget: "markdown" }
       - label: "Vysledky"
         name: "vysledky"
         widget: "list"
