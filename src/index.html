@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Decap cms: template main page</h1>
+    </header>
+
+    <main>
+    <a href="/news/">News</a>
+    <a href="/pages/contact">Contact</a>
+    <a href="/about/">About</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+
+    <script>
+    const params = new URLSearchParams(window.location.hash.slice(1));
+    if (params.has("invite_token")) {
+        window.location.href = `/admin/#invite_token=${params.get("invite_token")}`;
+    }
+    </script>
+</body>
+</html>

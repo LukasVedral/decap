@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/static/uploads"
+public_folder: "/static/uploads"
+
+collections:
+  - name: "about"
+    label: "About"
+    folder: "src/about"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - { label: "Image", name: "image", widget: "image", required: false } 
+  - name: "news"
+    label: "News"
+    folder: "src/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Date", name: "date", widget: "datetime", required: true }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - { label: "Image", name: "image", widget: "image", required: false } 
+      - { label: "File", name: "file", widget: "file", required: false } #adding file (download pdf)
+      - { label: "Category", name: "category", widget: "select", required: true, options: ["Important", "Question", "Blog", "Other"] }

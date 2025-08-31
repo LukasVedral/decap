@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+/* NEWS CSS*/
+
+.news-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: #888;
+}

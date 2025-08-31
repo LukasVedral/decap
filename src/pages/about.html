@@ -1,0 +1,45 @@
+---
+title: About
+permalink: /about/index.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template | about</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Decap cms: editable about page</h1>
+    </header>
+
+    <main>
+    <a href="../index.html">Home</a>
+
+    {% for post in collections.about %}
+        <article class="about-title">
+        <h2>{{ post.data.title }}</h2>
+
+        <div class="about-content">
+            {{ post.templateContent  }}
+        </div>
+
+        {% if post.data.image %}
+            <div class="about-image">
+            <img src="{{ post.data.image }}" alt="Portrait">
+            </div>
+        {% endif %}
+        </article>
+    {% endfor %}
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+    </body>
+    </html>
