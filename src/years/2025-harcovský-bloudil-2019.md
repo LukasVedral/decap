@@ -19,7 +19,7 @@ gallery:
     link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2019-zdenek-devaty
 video: https://www.youtube.com/watch?v=bVJVHvGWjuw&embeds_referring_euri=https%3A%2F%2Fwww.harcovskybloudil.cz%2F&source_ve_path=MjM4NTE
 ---
-Ahojvšem,
+Ahoj všem,
 
 děkujeme za účast na letošním ročníku. Výsledky jsou již hotové.
 
