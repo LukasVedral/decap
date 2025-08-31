@@ -7,7 +7,7 @@ vysledky:
     url: http://www.harcovskybloudil.cz/vysledky_dir/2015/ZZ_2015.pdf
   - label: ŽM - Mixy
     url: http://www.harcovskybloudil.cz/vysledky_dir/2015/MM_2015.pdf
-video: ""
+video: https://www.youtube.com/watch?v=BrsnB6zXApE
 ---
 
 
