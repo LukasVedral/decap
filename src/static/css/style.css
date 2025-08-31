@@ -935,6 +935,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
+        width: calc(100% - 16rem);
         margin: 0 8rem;
       }
 
