@@ -1,5 +1,6 @@
 ---
 title: Harcovský bloudil 13.11.2012
+orderLast: true
 vysledky:
   - label: MM - Muži
     url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_MM.pdf
