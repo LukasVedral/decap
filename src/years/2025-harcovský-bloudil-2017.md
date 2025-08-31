@@ -15,7 +15,7 @@ gallery:
   - from: Anči Kopková
     link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2017-foto-anci-kopkova
     image: https://img44.rajce.idnes.cz/d4402/14/14668/14668656_d08ed6c18d6101ecebb6975691bc1f2f/images/Bloudil-6507.jpg?ver=1
-video: https://youtu.be/SLVNN01mRPU
+video: https://www.youtube.com/watch?v=SLVNN01mRPU
 ---
 
 
