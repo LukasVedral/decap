@@ -846,7 +846,8 @@
     display: grid;
     grid-template-areas: "title" "text" "results" "gallery" "video";
     gap: 1rem;
-    border-bottom: var(--dark) 2px solid;
+    border-bottom: var(--dark) 1px solid;
+    padding-bottom: 2rem;
   }
   .year-item:last-child{
     border-bottom: none;
