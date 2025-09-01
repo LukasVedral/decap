@@ -4,12 +4,16 @@ year: 2019
 vysledky:
   - label: MM - Muži
     url: http://www.harcovskybloudil.cz/upload/files/MM---Muzi(2).pdf
+    file: /static/uploads/mm-muzi-2-.pdf
   - label: ŽŽ - Ženy
     url: http://www.harcovskybloudil.cz/upload/files/ZZ---Zeny(2).pdf
+    file: /static/uploads/deti.pdf
   - label: ŽM - Mixy
     url: http://www.harcovskybloudil.cz/upload/files/MZ---Mixy(1).pdf
+    file: /static/uploads/deti.pdf
   - label: Děti
     url: http://www.harcovskybloudil.cz/upload/files/Deti.pdf
+    file: /static/uploads/deti.pdf
 gallery:
   - from: Tomáš Srb
     image: https://img38.rajce.idnes.cz/d3803/16/16449/16449441_3b294ce199ae14a902880d4edc24283a/thumb/DSC07444.jpg
