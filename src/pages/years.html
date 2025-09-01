@@ -89,9 +89,11 @@ permalink: /pages/years/index.html
               <figure>
                 <a href="{{ photo.link | url }}">
                   <img class="img--responsive" src="{{ photo.image }}" alt="Foto">
-                  <figcaption>
-                    {{ photo.from }}
-                  </figcaption>
+                  {% if photo.from %}
+                    <figcaption>
+                      {{ photo.from }}
+                    </figcaption>
+                  {% endif %}
                 </a>
               </figure>
             {% endfor %}
