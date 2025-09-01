@@ -65,12 +65,12 @@
                   <figure>
                     
                     <a href="{{ photo.link | url }}">
-                      <img class="img--responsive" src="{{ photo.image }}" alt="Foto">
                       {% if photo.from %}
-                        <figcaption>
-                          {{ photo.from }}
-                        </figcaption>
-                      {% endif %}
+                      <figcaption>
+                        {{ photo.from }}
+                      </figcaption>
+                    {% endif %}
+                      <img class="img--responsive" src="{{ photo.image }}" alt="Foto">
                     </a>
                   </figure>
                 {% endfor %}
