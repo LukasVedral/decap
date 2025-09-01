@@ -8,6 +8,9 @@ vysledky:
     url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_ZZ.pdf
   - label: ŽM - Mixy
     url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_MZ.pdf
+gallery:
+  - image: https://img40.rajce.idnes.cz/d4002/9/9029/9029624_fa3529404678c09888920671d287e871/thumb/IMG_5540.jpg?ver=3
+    link: https://www.rajce.idnes.cz/jaroslav-kupr/album/harcovsky-bloudil-2013
 video: ""
 ---
 Třetí ročník Harcovského bloudila máme zdárně za sebou. Měsíček na cestu nesvítil, ale míra pojizerského humusu byla stále ještě únosná. Všem vám děkujeme za účast a doufáme, že jste si závod ve zdraví užili. Celkově se na trať vydalo 73 dvojic, které startovali v kategoriích muž-muž, žena-žena a muž-žena. Vyhlásili jsme i tři dvojice podivínů, kteří startovali v různých převlecích. Vážíme si i ostatních podivínských týmů, kterým to také náramně slušelo. Na trať se vydalo i několik mladších týmů k lezeckého oddílu HO Větrník. Tuto mladou elitu máme otestovanou i z jiných akcí, proto jsme se (ne)báli vypustit je na trať Harcovského bloudila. 

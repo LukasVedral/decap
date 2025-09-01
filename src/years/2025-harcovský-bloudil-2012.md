@@ -12,6 +12,9 @@ vysledky:
     url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_Podivini.pdf
   - label: Baby boom
     url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_Baby-boom.pdf
+gallery:
+  - link: https://www.rajce.idnes.cz/ktv-tul/album/harcovsky-bloudil-2012
+    image: https://img36.rajce.idnes.cz/d3601/7/7374/7374079_5e1a2a2634d0100675849f28bac29a32/thumb/IMG_7926.jpg?ver=3
 video: ""
 ---
 
