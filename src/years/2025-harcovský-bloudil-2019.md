@@ -7,10 +7,10 @@ vysledky:
     file: /static/uploads/mm-muzi-2-.pdf
   - label: ŽŽ - Ženy
     url: http://www.harcovskybloudil.cz/upload/files/ZZ---Zeny(2).pdf
-    file: /static/uploads/deti.pdf
+    file: /static/uploads/zz-zeny-2-.pdf
   - label: ŽM - Mixy
     url: http://www.harcovskybloudil.cz/upload/files/MZ---Mixy(1).pdf
-    file: /static/uploads/deti.pdf
+    file: /static/uploads/mz-mixy-1-.pdf
   - label: Děti
     url: http://www.harcovskybloudil.cz/upload/files/Deti.pdf
     file: /static/uploads/deti.pdf

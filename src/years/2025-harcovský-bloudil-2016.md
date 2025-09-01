@@ -3,11 +3,11 @@ title: Harcovský bloudil 2016
 year: 2016
 vysledky:
   - label: MM - Muži
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2016/Vysledkova_listina_2016_MM.pdf
+    file: /static/uploads/vysledkova_listina_2016_mm.pdf
   - label: ŽŽ - Ženy
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2016/Vysledkova_listina_2016_ZZ.pdf
+    file: /static/uploads/vysledkova_listina_2016_zz.pdf
   - label: ŽM - Mixy
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2016/Vysledkova_listina_2016_MZ.pdf
+    file: /static/uploads/vysledkova_listina_2016_mz.pdf
 gallery:
   - from: Tomáš Srb
     image: https://img40.rajce.idnes.cz/d4003/13/13423/13423977_cc0fc068d989c010a47d9c83ce3538fd/thumb/DSC08553.jpg?ver=1

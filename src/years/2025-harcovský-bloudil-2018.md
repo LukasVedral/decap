@@ -3,11 +3,11 @@ title: Harcovský bloudil 2018
 year: 2018
 vysledky:
   - label: MM - Muži
-    url: http://www.harcovskybloudil.cz/upload/files/MM---Muzi(1).pdf
+    file: /static/uploads/mm-muzi-1-.pdf
   - label: ŽŽ - Ženy
-    url: http://www.harcovskybloudil.cz/upload/files/ZZ---Zeny(1).pdf
+    file: /static/uploads/zz-zeny-1-.pdf
   - label: ŽM - Mixy
-    url: http://www.harcovskybloudil.cz/upload/files/ZM---Mixy(1).pdf
+    file: /static/uploads/zm-mixy-1-.pdf
 gallery:
   - from: Ríša Michna
     link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2018-fotky-od-richarda-michny

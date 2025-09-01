@@ -3,15 +3,15 @@ title: Harcovský bloudil 2012
 year: 2012
 vysledky:
   - label: MM - Muži
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_MM.pdf
+    file: /static/uploads/vysledky_2012_mm.pdf
   - label: ŽŽ - Ženy
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_ZZ.pdf
+    file: /static/uploads/vysledky_2012_zz.pdf
   - label: ŽM - Mixy
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_MZ.pdf
+    file: /static/uploads/vysledky_2012_mz.pdf
   - label: Podivíni
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_Podivini.pdf
+    file: /static/uploads/vysledky_2012_podivini.pdf
   - label: Baby boom
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2012/Vysledky_2012_Baby-boom.pdf
+    file: /static/uploads/vysledky_2012_baby-boom.pdf
 gallery:
   - link: https://www.rajce.idnes.cz/ktv-tul/album/harcovsky-bloudil-2012
     image: https://img36.rajce.idnes.cz/d3601/7/7374/7374079_5e1a2a2634d0100675849f28bac29a32/thumb/IMG_7926.jpg?ver=3
