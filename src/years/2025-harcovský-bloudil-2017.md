@@ -3,11 +3,11 @@ title: Harcovský bloudil 2017
 year: 2017
 vysledky:
   - label: MM - Muži
-    url: http://www.harcovskybloudil.cz/upload/files/MM---Muzi.pdf
+    file: /static/uploads/mm-muzi.pdf
   - label: ŽŽ - Ženy
-    url: http://www.harcovskybloudil.cz/upload/files/ZZ---Zeny.pdf
+    file: /static/uploads/zz-zeny.pdf
   - label: ŽM - Mixy
-    url: http://www.harcovskybloudil.cz/upload/files/ZM---Mixy.pdf
+    file: /static/uploads/zm-mixy.pdf
 gallery:
   - from: Richard
     image: https://img45.rajce.idnes.cz/d4502/14/14704/14704254_bb0f610c74433ded0eaea59ea474f76d/images/DSC00099.jpg?ver=1
