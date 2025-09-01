@@ -2,7 +2,8 @@ const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = function(eleventyConfig) {
   // Statické soubory
-  eleventyConfig.addPassthroughCopy({ "src/static": "static" });
+  eleventyConfig.addPassthroughCopy({ "src/static/uploads": "uploads" });
+  /*eleventyConfig.addPassthroughCopy({ "src/static": "static" });*/
   eleventyConfig.addPassthroughCopy({ "src/admin/config.yml": "admin/config.yml" });
 
   // Kolekce
