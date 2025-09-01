@@ -3,11 +3,11 @@ title: Harcovský bloudil 2013
 year: 2013
 vysledky:
   - label: MM - Muži
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_MM.pdf
+    file: /static/uploads/vysledkova_listina_2013_-_mm.pdf
   - label: ŽŽ - Ženy
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_ZZ.pdf
-  - label: ŽM - Mixy
-    url: http://www.harcovskybloudil.cz/vysledky_dir/2013/Vysledkova_listina_2013_-_MZ.pdf
+    file: /static/uploads/vysledkova_listina_2013_-_zz.pdf
+  - file: /static/uploads/vysledkova_listina_2013_-_mz.pdf
+    label: ŽM - Mixy
 gallery:
   - image: https://img40.rajce.idnes.cz/d4002/9/9029/9029624_fa3529404678c09888920671d287e871/thumb/IMG_5540.jpg?ver=3
     link: https://www.rajce.idnes.cz/jaroslav-kupr/album/harcovsky-bloudil-2013
