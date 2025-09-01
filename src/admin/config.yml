@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "src/static/uploads"
-public_folder: "/uploads"
+public_folder: "/static/uploads"
 
 
 collections:
