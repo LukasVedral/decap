@@ -20,8 +20,8 @@ collections:
         name: "vysledky"
         widget: "list"
         fields:
-          - { label: "Kategorie", name: "label", widget: "string" }
-          - { label: "Odkaz", name: "url", widget: "string" }
+        - { label: "Kategorie", name: "label", widget: "string" }
+        - { label: "Soubor", name: "file", widget: "file", media_library: { allow_multiple: false } }
       - label: "Galerie"
         name: "gallery"
         widget: "list"
