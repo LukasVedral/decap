@@ -12,10 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2", 
+    "@11ty/eleventy": "^3.1.2",
     "vite": "^7.1.1"
   },
   "dependencies": {
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "decap-cms": "^3.8.3"
   }
 }
