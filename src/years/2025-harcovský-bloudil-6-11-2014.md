@@ -8,6 +8,9 @@ vysledky:
     url: http://www.harcovskybloudil.cz/vysledky_dir/2014/Vysledky_2014_ZZ.pdf
   - label: ŽM - Mixy
     url: http://www.harcovskybloudil.cz/vysledky_dir/2014/Vysledky_2014_MZ.pdf
+gallery:
+  - link: https://www.rajce.idnes.cz/jaroslav-kupr/album/harcovsky-bloudil-2014
+    image: https://img36.rajce.idnes.cz/d3603/10/10643/10643471_e3977f030f7392b128695e2ecc926b36/thumb/IMG_4846.jpg?ver=3
 video: ""
 ---
 Ahoj závoďáci,
