@@ -846,6 +846,10 @@
     display: grid;
     grid-template-areas: "title" "text" "results" "gallery" "video";
     gap: 1rem;
+    border-bottom: var(--dark) 2px solid;
+  }
+  .year-item:last-child{
+    border-bottom: none;
   }
   .year-item > h2{
     grid-area: title;
