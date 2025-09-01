@@ -904,6 +904,38 @@
 
 
 
+  /*galerie*/
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  .gallery-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .gallery-item figure{
+    position: relative;
+    max-width: 280px;
+  }
+  .gallery-item figcaption{
+    position: absolute;
+    left: -1000px;
+  }
+  .gallery-item figure:hover figcaption{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
 
 
 
@@ -1131,5 +1163,11 @@
       .year-gallery figure{
         flex: none;
       }
+
+      .gallery, .gallery-item{
+        align-items: start;
+        justify-content: start;
+      }
+
     }
 }

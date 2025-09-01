@@ -58,11 +58,12 @@
 
     {% for year in collections.years %}
       {% if year.data.gallery %}
-        <div class="gallery-item">
+        <div class="gallery">
           <h2>{{ year.data.year }}</h2>
-              <div class="gallery">
+              <div class="gallery-item">
                 {% for photo in year.data.gallery %}
                   <figure>
+                    
                     <a href="{{ photo.link | url }}">
                       <img class="img--responsive" src="{{ photo.image }}" alt="Foto">
                       {% if photo.from %}
