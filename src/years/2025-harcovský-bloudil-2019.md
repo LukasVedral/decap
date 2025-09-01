@@ -1,5 +1,5 @@
 ---
-title: Harcovský Bloudil 2019
+title: Harcovský bloudil 2019
 year: 2019
 vysledky:
   - label: MM - Muži
