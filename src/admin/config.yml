@@ -15,7 +15,7 @@ collections:
     fields:
       - { label: "Nadpis", name: "title", widget: "string" }
       - { label: "Rok", name: "year", widget: "number", required: true}
-      - { label: "Text", name: "body", widget: "markdown" }
+      - { label: "Text", name: "body", widget: "markdown", required: false }
       - label: "Vysledky"
         name: "vysledky"
         widget: "list"
@@ -26,7 +26,7 @@ collections:
         name: "gallery"
         widget: "list"
         fields:
-          - { label: "Od koho", name: "from", widget: "string" }
+          - { label: "Od koho", name: "from", widget: "string" , required: false}
           - { label: "Náhledový obrázek", name: "image", widget: "image" }
           - { label: "Odkaz", name: "link", widget: "string" }
       - label: "Odkaz na video"
