@@ -54,9 +54,29 @@
   
   <main class="main__container">
     <h1>Galerie</h1>
-    <div id="galerie">
-      
-    </div>
+
+
+    {% for year in collections.years %}
+      {% if year.data.gallery %}
+        <div class="gallery-item">
+          <h2>{{ year.data.year }}</h2>
+              <div class="gallery">
+                {% for photo in year.data.gallery %}
+                  <figure>
+                    <a href="{{ photo.link | url }}">
+                      <img class="img--responsive" src="{{ photo.image }}" alt="Foto">
+                      <figcaption>
+                        {{ photo.from }}
+                      </figcaption>
+                    </a>
+                  </figure>
+                {% endfor %}
+              </div>
+            </div>
+        {% endif %}
+      {% endfor %}
+
+
   </main>
 
 
