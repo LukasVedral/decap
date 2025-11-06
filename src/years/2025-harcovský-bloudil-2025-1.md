@@ -2,13 +2,13 @@
 title: Harcovský Bloudil 2025
 year: 2025
 vysledky:
-  - label: MM
+  - label: MM - muži
     file: /static/uploads/mm-2025.pdf
-  - label: ŽŽ
+  - label: ŽŽ - ženy
     file: /static/uploads/žž-2025.pdf
   - file: /static/uploads/žm-2025.pdf
-    label: ŽM
-  - label: DD
+    label: ŽM - mixy
+  - label: DD - dospělý/dítě
     file: /static/uploads/dd-2025.pdf
 video: ""
 ---
