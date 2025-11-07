@@ -10,6 +10,10 @@ vysledky:
     label: ŽM - mixy
   - label: DD - dospělý/dítě
     file: /static/uploads/dd-2025.pdf
+gallery:
+  - image: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2025-majda
+    from: Majda
+    link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2025-majda
 video: ""
 ---
 Ahoj všem bloudilům. 
