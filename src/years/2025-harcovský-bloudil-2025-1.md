@@ -14,6 +14,9 @@ gallery:
   - image: /static/uploads/5h9a0180.jpg
     from: Majda
     link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2025-majda
+  - from: Eliška
+    image: /static/uploads/_dsf5909.jpg
+    link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2025-eliska
 video: ""
 ---
 Ahoj všem bloudilům. 
