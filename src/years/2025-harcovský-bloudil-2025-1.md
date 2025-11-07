@@ -11,7 +11,7 @@ vysledky:
   - label: DD - dospělý/dítě
     file: /static/uploads/dd-2025.pdf
 gallery:
-  - image: /static/uploads/5h9a0143.jpg
+  - image: /static/uploads/5h9a0180.jpg
     from: Majda
     link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2025-majda
 video: ""
