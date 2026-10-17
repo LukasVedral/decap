@@ -1,5 +1,5 @@
 // ⚠️ Sem vlož NOVOU URL z nového nasazení Apps Scriptu
-const API_URL = "https://script.google.com/macros/s/AKfycbyyjrDha5JtGK2Dpr6yB9CcEhEs-wRJ3Uspsp0a0tDvU6fAyksfXMH3gStQLXHdgDBHaw/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbxa8aCFkkCx5hH9KmEiayVcjkncReit8vBFedlzD07UL1ZMyQ8Fhg6Gy7pAxf9z2n3f/exec";
 const MAX_TEAMS = 80;
 
 // 🔹 Escapování textu před vložením do HTML (ochrana proti XSS)
