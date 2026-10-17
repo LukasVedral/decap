@@ -1,4 +1,14 @@
-const API_URL="https://script.google.com/macros/s/AKfycbyhL9rOh2N0cSkxBxs1Ipvo7b-QpihzaeuNgOf8GAqGqPpZV9jgqFlcWryZa-UoflqQkw/exec";
+// ⚠️ Sem vlož NOVOU URL z nového nasazení Apps Scriptu
+const API_URL = "https://script.google.com/macros/s/AKfycbyyjrDha5JtGK2Dpr6yB9CcEhEs-wRJ3Uspsp0a0tDvU6fAyksfXMH3gStQLXHdgDBHaw/exec";
+const MAX_TEAMS = 80;
+
+// 🔹 Escapování textu před vložením do HTML (ochrana proti XSS)
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+  ));
+}
+
 // 🔹 Elementy modalu přihlášení
 const modal = document.getElementById("signup-modal");
 const closeModalBtn = document.getElementById("close-modal");
@@ -41,6 +51,10 @@ submitSignupBtn.addEventListener("click", async () => {
 
     if (result.success) {
       modal.classList.add("hidden");
+      // vyčištění formuláře
+      ["teamName", "racer1", "email1", "racer2", "email2", "password"].forEach(id => {
+        document.getElementById(id).value = "";
+      });
       fetchTeams();
     } else {
       alert(result.message || "Nepodařilo se přihlásit tým.");
@@ -59,28 +73,25 @@ async function fetchTeams() {
   try {
     const res = await fetch(API_URL);
     const teams = await res.json();
-    localStorage.setItem("teams", JSON.stringify(teams));
     renderTable(teams);
+    updateCapacity(teams);
   } catch (err) {
     console.error("Chyba při načítání z Google Sheets:", err);
   }
 }
 
-// 🔹 Kontrola kapacity (max 80 týmů)
-async function checkCapacity() {
-  try {
-    const res = await fetch(API_URL);
-    const teams = await res.json();
-
-    if (teams.length >= 80) {
-      const signUpBtn = document.querySelector("#sign-up-btn");
-      signUpBtn.disabled = true;
-      signUpBtn.textContent = "Kapacita naplněna";
-      signUpBtn.classList.add("disabled");
-      modal.classList.add("hidden");
-    }
-  } catch (err) {
-    console.error("Chyba při kontrole kapacity:", err);
+// 🔹 Kontrola kapacity (max 80 týmů) – bere data z už načteného seznamu
+function updateCapacity(teams) {
+  const btn = document.querySelector("#sign-up-btn");
+  if (teams.length >= MAX_TEAMS) {
+    btn.disabled = true;
+    btn.textContent = "Kapacita naplněna";
+    btn.classList.add("disabled");
+    modal.classList.add("hidden");
+  } else {
+    btn.disabled = false;
+    btn.textContent = "Přihlásit se";
+    btn.classList.remove("disabled");
   }
 }
 
@@ -91,11 +102,11 @@ function renderTable(teams) {
   teams.forEach(team => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td>${team.teamName}</td>
-      <td>${team.category}</td>
-      <td>${team.racer1}</td>
-      <td>${team.racer2}</td>
-      <td><button class="sign-out-btn" data-team="${team.teamName}" data-racer1="${team.racer1}" data-racer2="${team.racer2}">Odhlásit se</button></td>
+      <td>${esc(team.teamName)}</td>
+      <td>${esc(team.category)}</td>
+      <td>${esc(team.racer1)}</td>
+      <td>${esc(team.racer2)}</td>
+      <td><button class="sign-out-btn" data-id="${esc(team.id)}">Odhlásit se</button></td>
     `;
     tableBody.appendChild(tr);
   });
@@ -109,16 +120,14 @@ let logoutData = null;
 
 document.querySelector("#team-table").addEventListener("click", (e) => {
   if (e.target.classList.contains("sign-out-btn")) {
-    const teamName = e.target.dataset.team;
-    const racer1 = e.target.dataset.racer1;
-    const racer2 = e.target.dataset.racer2;
-    logoutData = { teamName, racer1, racer2 };
+    logoutData = { id: e.target.dataset.id };
     logoutModal.classList.remove("hidden");
   }
 });
 
 closeLogoutBtn.addEventListener("click", () => {
   logoutModal.classList.add("hidden");
+  document.getElementById("logout-password").value = "";
   logoutData = null;
 });
 
@@ -130,19 +139,28 @@ confirmLogoutBtn.addEventListener("click", async () => {
     return;
   }
 
-  const res = await fetch(API_URL, {
-    method: "POST",
-    body: JSON.stringify({ action: "remove", ...logoutData, password }),
-  });
-  const result = await res.json();
+  confirmLogoutBtn.disabled = true;
 
-  if (result.success) {
-    fetchTeams();
-    logoutModal.classList.add("hidden");
-    document.getElementById("logout-password").value = "";
-    logoutData = null;
-  } else {
-    alert(result.message || "Odhlášení se nepodařilo.");
+  try {
+    const res = await fetch(API_URL, {
+      method: "POST",
+      body: JSON.stringify({ action: "remove", ...logoutData, password }),
+    });
+    const result = await res.json();
+
+    if (result.success) {
+      fetchTeams();
+      logoutModal.classList.add("hidden");
+      document.getElementById("logout-password").value = "";
+      logoutData = null;
+    } else {
+      alert(result.message || "Odhlášení se nepodařilo.");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Chyba při komunikaci se serverem.");
+  } finally {
+    confirmLogoutBtn.disabled = false;
   }
 });
 
@@ -168,5 +186,4 @@ categoryList.querySelectorAll("img").forEach(img => {
 // 🔹 Po načtení stránky
 document.addEventListener("DOMContentLoaded", () => {
   fetchTeams();
-  checkCapacity();
 });
