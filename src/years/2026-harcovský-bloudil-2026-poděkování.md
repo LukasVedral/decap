@@ -10,4 +10,4 @@ rádi bychom poděkovali za úspěšný 11. ročník Bloudila. Bylo to opět par
 
 Díky všem kamarádům, podporovatelům a sponzorům, bez kterých by to nešlo.
 
-![](/static/uploads/bloudil-mapa-kontroly-loga-iv_edited.jpg)
+![](/static/uploads/whatsapp-image-2026-11-05-at-08.21.23-2-.jpeg)
