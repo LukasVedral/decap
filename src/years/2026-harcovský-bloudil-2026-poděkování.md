@@ -1,7 +1,15 @@
 ---
 title: Harcovský Bloudil 2026 - poděkování
 year: 2026
-vysledky: []
+vysledky:
+  - label: MM - Muži
+    file: /static/uploads/mm-final.pdf
+  - label: ŽŽ - Ženy
+    file: /static/uploads/žž-final.pdf
+  - label: ŽM - Mixy
+    file: /static/uploads/žm-final.pdf
+  - label: DD - dospělý, dítě
+    file: /static/uploads/dd-final.pdf
 video: ""
 ---
 Ahoj všem, 
