@@ -1,6 +1,7 @@
 ---
 title: Harcovský Bloudil 2026 - poděkování
 year: 2026
+vysledky: []
 video: ""
 ---
 Ahoj všem, 
