@@ -104,6 +104,26 @@
       <p><strong>Harcovský bloudil</strong> je <b>večerní orientační závod dvojic</b> v okolí Harcovských kolejí Technické univerzity v Liberci. Okolí Harcova skýtá <b>neuvěřitelné množství zajímavých míst a zákoutí</b>, která mají za tmy <strong>zvláštní atmosféru</strong>. Smyslem závodu je hlavně <strong>pobavení účastníků</strong> a <b>příjemné prožití volného času</b>. Závodit je možné v pěti kategoriích: <strong>muž + muž (MM)</strong>, <strong>žena + žena (ŽŽ)</strong>, <strong>mix žena + muž (ŽM)</strong>, <strong>dítě do 15 let + dospělý</strong> a vložená kategorie <strong>Podivíní</strong> (závodníci v maskách).</p>
     </section>
 
+        {% assign latestYear = collections.years | first %}
+    {% if latestYear %}
+    <section class="main__news">
+      <header>
+        <h2>Novinky</h2>
+      </header>
+
+      <article class="news__item">
+        <h3>{{ latestYear.data.title }}</h3>
+        <p class="news__content">
+          {{ latestYear.templateContent | strip_html }}
+        </p>
+      </article>
+
+      <a href="/pages/years" class="btn btn--primary primary--light">
+        Všechny novinky
+      </a>
+    </section>
+    {% endif %}
+
 
     <section class="main__props">
       <div class="props__item props--time">
@@ -135,9 +155,11 @@
 
     </section>
 
+
+
     <section class="main__winners">
       <header>
-        <h2>Výsledky 2025</h2>
+        <h2>Výsledky 2026</h2>
       </header>
 
       <div class="winners__container">
@@ -145,14 +167,14 @@
         <div class="winners__podium">
           <div class="winners">
             <div class="winner">
-              <p>Navigační Masakr</p>
+              <p>HOJG + VLIO</p>
               <div class="podium podium--third">
                 <p class="podium__place">3</p>
               </div>
             </div>
 
             <div class="winner">
-              <p>Stavěcí Mašina</p>
+              <p>Pivní žal</p>
               <div class="podium podium--first">
                 <p class="podium__place">1</p>
                 <img class="winners__icon" src="./static/img/svg/icons/men.svg" alt="muži">
@@ -160,7 +182,7 @@
             </div>
 
             <div class="winner">
-              <p>Včelařství Šťovíček</p>
+              <p>HO Cecky</p>
               <div class="podium podium--second">
                 <p class="podium__place">2</p>
               </div>
@@ -168,21 +190,21 @@
           </div>
           
           <div class="results">
-          <a href="static/uploads/mm-2025.pdf" class="btn btn--primary primary--light">Výsledky-MM</a>
+          <a href="static/uploads/mm-final.pdf" class="btn btn--primary primary--light">Výsledky-MM</a>
           </div>
         </div>
 
         <div class="winners__podium">
           <div class="winners">
           <div class="winner">
-            <p>Barbie bitches</p>
+            <p>Sardinky na ledu</p>
             <div class="podium podium--third">
               <p class="podium__place">3</p>
             </div>
           </div>
 
           <div class="winner">
-            <p>Opět v akci! :)</p>
+            <p>Lézo pipky</p>
             <div class="podium podium--first">
               <p class="podium__place">1</p>
               <img class="winners__icon" src="./static/img/svg/icons/women.svg" alt="ženy">
@@ -190,15 +212,14 @@
           </div>
 
           <div class="winner">
-            <p>Nechaly sedm dětí na hlídání
-jednomu otci</p>
+            <p>Udaly 7 deti a vubec se za to nestydi!</p>
             <div class="podium podium--second">
               <p class="podium__place">2</p>
             </div>
           </div>
         </div>
         <div class="results">
-          <a href="/static/uploads/žž-2025.pdf" class="btn btn--primary primary--light">Výsledky-ŽŽ</a>
+          <a href="/static/uploads/žž-final.pdf" class="btn btn--primary primary--light">Výsledky-ŽŽ</a>
         </div>
         </div>
 
@@ -208,14 +229,14 @@ jednomu otci</p>
         <div class="winners__podium">
           <div class="winners">
           <div class="winner">
-            <p>SK Veská </p>
+            <p>Rumpál</p>
             <div class="podium podium--third">
               <p class="podium__place">3</p>
             </div>
           </div>
 
           <div class="winner">
-            <p>Setkali se po letech</p>
+            <p>SK 99 Harcov</p>
             <div class="podium podium--first">
               <p class="podium__place">1</p>
               <img class="winners__icon" src="./static/img/svg/icons/mix.svg" alt="mixy">
@@ -223,14 +244,14 @@ jednomu otci</p>
           </div>
 
           <div class="winner">
-            <p>Rumpál</p>
+            <p>Ztratili se v lese</p>
             <div class="podium podium--second">
               <p class="podium__place">2</p>
             </div>
           </div>
         </div>
         <div class="results">
-          <a href="/static/uploads/žm-2025.pdf" class="btn btn--primary primary--light">Výsledky-MŽ</a>
+          <a href="/static/uploads/žm-final.pdf" class="btn btn--primary primary--light">Výsledky-MŽ</a>
         </div>
       </div>
 
@@ -239,14 +260,14 @@ jednomu otci</p>
         <div class="winners__podium">
           <div class="winners">
           <div class="winner">
-            <p>Šíráci </p>
+            <p>Příště pujdeme radši do cukrárny</p>
             <div class="podium podium--third">
               <p class="podium__place">3</p>
             </div>
           </div>
 
           <div class="winner">
-            <p>HOJG+VLIO </p>
+            <p>Jo!Ho</p>
             <div class="podium podium--first">
               <p class="podium__place">1</p>
               <img class="winners__icon" src="./static/img/svg/icons/children.svg" alt="děti">
@@ -254,14 +275,14 @@ jednomu otci</p>
           </div>
 
           <div class="winner">
-            <p>Žabáci VV</p>
+            <p>Žabáci</p>
             <div class="podium podium--second">
               <p class="podium__place">2</p>
             </div>
           </div>
         </div>
         <div class="results">
-          <a href="/static/uploads/dd-2025.pdf" 
+          <a href="/static/uploads/dd-final.pdf" 
           class="btn btn--primary primary--light">Výsledky-DD</a>
         </div>
       </div>
@@ -334,7 +355,7 @@ jednomu otci</p>
         <path d="M0.222229 21H110V1L0.222229 21Z" fill="#231F20" stroke="#231F20"/>
       </svg>
 
-      
+
         
 
 
