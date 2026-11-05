@@ -1,6 +1,7 @@
 ---
 title: Harcovský bloudil 2016
 year: 2016
+date: 2016-01-01
 vysledky:
   - label: MM - Muži
     file: /static/uploads/vysledkova_listina_2016_mm.pdf

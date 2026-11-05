@@ -1,6 +1,7 @@
 ---
 title: Harcovský Bloudil 2026
 year: 2026
+date: 2026-01-01
 video: ""
 ---
 Ahoj všem,

@@ -1,6 +1,7 @@
 ---
 title: Harcovský bloudil 2015
 year: 2015
+date: 2015-01-01
 vysledky:
   - label: MM - Muži
     file: /static/uploads/mm_2015.pdf

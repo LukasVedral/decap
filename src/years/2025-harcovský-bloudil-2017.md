@@ -1,6 +1,7 @@
 ---
 title: Harcovský bloudil 2017
 year: 2017
+date: 2017-01-01
 vysledky:
   - label: MM - Muži
     file: /static/uploads/mm-muzi.pdf

@@ -1,6 +1,7 @@
 ---
 title: Harcovský bloudil 2012
 year: 2012
+date: 2012-01-01
 vysledky:
   - label: MM - Muži
     file: /static/uploads/vysledky_2012_mm.pdf

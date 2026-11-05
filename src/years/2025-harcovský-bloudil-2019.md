@@ -1,6 +1,7 @@
 ---
 title: Harcovský bloudil 2019
 year: 2019
+date: 2019-01-01
 vysledky:
   - label: MM - Muži
     url: http://www.harcovskybloudil.cz/upload/files/MM---Muzi(2).pdf

@@ -1,6 +1,7 @@
 ---
 title: Harcovský Bloudil 2026 - poděkování
 year: 2026
+date: 2026-11-01
 vysledky:
   - label: MM - Muži
     file: /static/uploads/mm-final.pdf

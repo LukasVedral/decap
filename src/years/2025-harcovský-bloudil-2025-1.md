@@ -1,6 +1,7 @@
 ---
 title: Harcovský Bloudil 2025
 year: 2025
+date: 2025-01-01
 vysledky:
   - label: MM - muži
     file: /static/uploads/mm-2025.pdf

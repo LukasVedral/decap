@@ -1,6 +1,7 @@
 ---
 title: Bloudil 2020 ZRUŠEN
 year: 2020
+date: 2020-01-01
 video: ""
 ---
 

@@ -15,6 +15,7 @@ collections:
     fields:
       - { label: "Nadpis", name: "title", widget: "string" }
       - { label: "Rok", name: "year", widget: "number", required: true}
+      - { label: "Datum vytvoření", name: "date", widget: "hidden", default: "" }
       - { label: "Text", name: "body", widget: "markdown", required: false }
       - { label: "Obrázek", name: "img", widget: "image", required: false }
       - label: "Vysledky"
