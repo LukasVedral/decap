@@ -10,6 +10,10 @@ vysledky:
     file: /static/uploads/žm-final.pdf
   - label: DD - dospělý, dítě
     file: /static/uploads/dd-final.pdf
+gallery:
+  - link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2026
+    image: /static/uploads/dsc03544.jpg
+    from: Bloudil 2026
 video: ""
 ---
 Ahoj všem, 
