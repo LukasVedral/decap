@@ -3,15 +3,7 @@ title: Harcovský Bloudil 2026 - poděkování
 year: 2026
 date: 2026-11-01
 img: /static/uploads/whatsapp-image-2026-11-05-at-08.21.23-2-.jpeg
-vysledky:
-  - label: MM - Muži
-    file: /static/uploads/mm-final.pdf
-  - label: ŽŽ - Ženy
-    file: /static/uploads/žž-final.pdf
-  - label: ŽM - Mixy
-    file: /static/uploads/žm-final.pdf
-  - label: DD - dospělý, dítě
-    file: /static/uploads/dd-final.pdf
+vysledky: []
 gallery:
   - link: https://www.rajce.idnes.cz/hovetrnik/album/harcovsky-bloudil-2026
     image: /static/uploads/dsc03544.jpg
